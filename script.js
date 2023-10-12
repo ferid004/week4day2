@@ -44,4 +44,20 @@
 // }
 // yaza bilmirəm
 
+var number = 9; // Kontrol edilecek sayı
 
+if (number < 1) {
+    console.log("quvvet ola bilmez");
+} 
+else {
+    while (number > 1) {
+        if (number % 2 !== 0) {
+            console.log(" 2'nin quvveti deyil.");
+            break;
+        }
+        number = number / 2;
+    }
+    if (number === 1) {
+        console.log(" 2'nin quvvetidir.");
+    }
+}
